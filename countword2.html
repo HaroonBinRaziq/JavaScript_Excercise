@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background: black;
+        }
+        .edits{
+            border: 2px solid chocolate;
+            border-radius: 5px;
+            font-size: larger;
+            color: darkblue;
+            background-color: grey;
+            text-align: center;
+        
+        }
+        button{
+            border: 2px solid firebrick;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            background-color: greenyellow;
+        }
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
+<div>
+<p class="edits">Click the Button I have a question</p>
+
+<button onclick="myFunction()">Touch me</button>
+
+<p id="answer"></p>
+</div>
+<script>
+function myFunction() {
+  var question = prompt ("what is your favorite Smartphone");
+  var n = question.length
+  alert(n)
+  document.getElementById("answer").innerHTML = res;
+}
+</script>
+</html>
+</body>
+</html>

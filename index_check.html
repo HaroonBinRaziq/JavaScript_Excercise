@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexcheck</title>
+</head>
+<body>
+    <style>
+        button{
+            padding: 20px 40px;
+            background: linear-gradient(rgb(35, 126, 201),rgb(48, 201, 221));
+        }
+        p{
+            font-size: 40px;
+            font-family: fantasy;
+            font-weight: bold;
+        }
+    </style>
+    <p>String: Pakistani</p>
+
+<button onclick="myFunction()">Answer</button>
+
+<p id="para"></p>
+<p id="para1"></p>
+
+<script>
+function myFunction() {
+  var check = "Pakistani";
+  var check_1 = "Pakistani";
+  var index = check.indexOf("n");
+  var index_1 = check_1.charAt(3);
+  window.alert("Index of 'n' + is: " +  index);
+  window.alert("Index of 'i' + is: " + index_1);
+  document.getElementById("para").innerHTML = index;
+  document.getElementById("para1").innerHTML = index_1;
+}
+</script>
+</body>
+</html>

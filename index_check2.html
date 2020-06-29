@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexcheck</title>
+</head>
+<body>
+    <style>
+        button{
+            padding: 20px 40px;
+            background: linear-gradient(rgb(35, 126, 201),rgb(48, 201, 221));
+        }
+        p{
+            font-size: 40px;
+            font-family: fantasy;
+            font-weight: bold;
+        }
+    </style>
+    <p>String: Hello World</p>
+
+<button onclick="myFunction()">Answer</button>
+
+<p id="para"></p>
+
+<script>
+function myFunction() {
+  var check = "Hello World";
+
+  var index = check.lastIndexOf("l");
+  window.alert("Last Index of 'l' + is: " +  index);
+  document.getElementById("para").innerHTML = index;
+}
+</script>
+</body>
+</html>

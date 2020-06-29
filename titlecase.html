@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function titleCase(title){
+    // var input = prompt("User input: ");
+    var input = title.toLowerCase().split(" ");
+    for(var i = 0; i < input.length;i++){
+        input[i] = input[i][0].toUpperCase() + input[i].slice(1);
+    }
+    document.write(input.join(" "));
+    return input;
+}
+titleCase("javascript")
+    // input = "input".toProperCase();
+    // alert("Upper Case: " + input)
+    // }
+</script>
