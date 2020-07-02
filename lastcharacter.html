@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>String: Pakistan</p>
+
+    <button onclick="myFunction()">Answer</button>
+    
+    <p id="para"></p>
+    <p id="para1"></p>
+</body>
+</html>
+<script>
+    function myFunction() {
+  var check = "Pakistan";
+  var index = check.charAt(7);
+  window.alert("Last character of is: " +  index);
+  
+  document.getElementById("para").innerHTML = index;
+}
+</script>
